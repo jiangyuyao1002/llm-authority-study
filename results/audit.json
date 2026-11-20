@@ -1,0 +1,28 @@
+{
+  "completed_unique_trials": 1152,
+  "raw_success_records": 1152,
+  "http_attempt_records": 1204,
+  "http_status_counts": {
+    "completed": 1152,
+    "429": 52
+  },
+  "returned_models": {
+    "qwen-plus-2025-01-25": 576,
+    "qwen3.5-plus-2026-02-15": 576
+  },
+  "finish_reasons": {
+    "stop": 1151,
+    "tool_calls": 1
+  },
+  "schema_valid": 868,
+  "normalized_schema_valid": 1151,
+  "fence_recovered": 283,
+  "prompt_tokens": 405984,
+  "completion_tokens": 61128,
+  "first_request_utc": "2026-09-07T08:21:35.179576+00:00",
+  "last_request_utc": "2026-09-07T08:41:42.614158+00:00",
+  "request_hashes_all_verified": true,
+  "evaluation_self_checks": "9 passed",
+  "primary_interval_scope": "descriptive paired task bootstrap; finite synthetic task collection; not simultaneous intervals",
+  "context_sensitivity_clusters": 8
+}

@@ -1,0 +1,17 @@
+{
+  "final_pdf_pages": 12,
+  "figures": 5,
+  "tables": 2,
+  "verified_references": 7,
+  "raw_responses": 1152,
+  "pair_cells": 576,
+  "all_repeats_present": true,
+  "frozen_case_hash_verified": true,
+  "strict_and_normalized_guard_categories_conserve_counts": true,
+  "token_sum": 467112,
+  "latex_compile_success": true,
+  "latex_log_warnings": [],
+  "visual_review": "All page layouts and all figures inspected; final equation and appendix pages re-rendered after corrections.",
+  "authorship_status": "Human author metadata, declarations and independent scholarly review remain outstanding.",
+  "study_scope": "24 constructed tasks; two related dated model endpoints; no deployment validation."
+}

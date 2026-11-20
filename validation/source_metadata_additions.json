@@ -1,0 +1,73 @@
+[
+  {
+    "key": "toolparse",
+    "url": "https://arxiv.org/abs/2601.04795",
+    "metadata": {
+      "citation_title": [
+        "Defense Against Indirect Prompt Injection via Tool Result Parsing"
+      ],
+      "citation_author": [
+        "Yu, Qiang",
+        "Cheng, Xinran",
+        "Liu, Chuanyi"
+      ],
+      "citation_date": [
+        "2026/01/08"
+      ],
+      "citation_online_date": [
+        "2026/01/08"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2601.04795"
+      ],
+      "citation_arxiv_id": [
+        "2601.04795"
+      ],
+      "citation_abstract": [
+        "As LLM agents transition from digital assistants to physical controllers in autonomous systems and robotics, they face an escalating threat from indirect prompt injection. By embedding adversarial instructions into the results of tool calls, attackers can hijack the agent's decision-making process to execute unauthorized actions. This vulnerability poses a significant risk as agents gain more direct control over physical environments. Existing defense mechanisms against Indirect Prompt Injection (IPI) generally fall into two categories. The first involves training dedicated detection models; however, this approach entails high computational overhead for both training and inference, and requires frequent updates to keep pace with evolving attack vectors. Alternatively, prompt-based methods leverage the inherent capabilities of LLMs to detect or ignore malicious instructions via prompt engineering. Despite their flexibility, most current prompt-based defenses suffer from high Attack Success Rates (ASR), demonstrating limited robustness against sophisticated injection attacks. In this paper, we propose a novel method that provides LLMs with precise data via tool result parsing while effectively filtering out injected malicious code. Our approach achieves competitive Utility under Attack (UA) while maintaining the lowest Attack Success Rate (ASR) to date, significantly outperforming existing methods. Code is available at GitHub."
+      ]
+    },
+    "landing_page_sha256": "aca248194ec29f8c376a1d95ca8dc27db07427e7c4f89d6acb5e20916c8e5af4"
+  },
+  {
+    "key": "tracesafe",
+    "url": "https://arxiv.org/abs/2604.07223",
+    "metadata": {
+      "citation_title": [
+        "TraceSafe: A Systematic Assessment of LLM Guardrails on Multi-Step Tool-Calling Trajectories"
+      ],
+      "citation_author": [
+        "Chen, Yen-Shan",
+        "Huang, Sian-Yao",
+        "Yang, Cheng-Lin",
+        "Chen, Yun-Nung"
+      ],
+      "citation_date": [
+        "2026/04/08"
+      ],
+      "citation_online_date": [
+        "2026/08/09"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2604.07223"
+      ],
+      "citation_arxiv_id": [
+        "2604.07223"
+      ],
+      "citation_abstract": [
+        "As large language models (LLMs) evolve from static chatbots into autonomous agents, the primary vulnerability surface shifts from final outputs to intermediate execution traces. While safety guardrails are well-benchmarked for natural language responses, their efficacy remains largely unexplored within multi-step tool-use trajectories. To address this gap, we introduce **TraceSafe-Bench**, the first comprehensive benchmark specifically designed to assess mid-trajectory safety. It encompasses 12 risk categories, ranging from security threats (e.g., prompt injection, privacy leaks) to operational failures (e.g., hallucinations, interface inconsistencies), featuring over 1,000 unique execution instances. Our evaluation of 13 LLM-as-a-guard models and 7 specialized guardrails yields three critical findings: 1) *Structural Bottleneck*: Guardrail efficacy is driven more by structural data competence (e.g., JSON parsing) than semantic safety alignment. Performance correlates strongly with structured-to-text benchmarks ($\\rho=0.79$, $p<0.01$) while we detect no association with standard jailbreak robustness. 2) *Scale Is Not the Deciding Factor*: Trajectory detection accuracy does not scale monotonically with model size, and general-purpose LLMs consistently outperform specialized safety guardrails. 3) *Bounded Temporal Stability*: Detection accuracy improves with trajectory length within native context bounds as models process dynamic execution behavior, but degrades in extreme long-context regimes due to over-refusal."
+      ]
+    },
+    "landing_page_sha256": "a74716a80f74d4961f59e50cd6b46d848cacc8295ab95fd1122dca9b6d2db624"
+  },
+  {
+    "key": "wikitable",
+    "url": "https://aclanthology.org/P15-1142.bib",
+    "bibtex_sha256": "9fcf6b82307389184ee7c83e87d377e35b7fbe37996d548ca4894c685f61d77d"
+  },
+  {
+    "key": "wikitable_license",
+    "url": "https://raw.githubusercontent.com/ppasupat/WikiTableQuestions/master/LICENSE",
+    "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297"
+  }
+]

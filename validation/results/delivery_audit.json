@@ -1,0 +1,20 @@
+{
+  "retained_api_responses": 2232,
+  "experiment_1_responses": 1152,
+  "experiment_2_responses": 1080,
+  "unfilled_validation_jobs": 0,
+  "network_failure_jobs_recovered": 2,
+  "network_error_attempts_preserved": 10,
+  "completed_model_errors_replaced": false,
+  "pdf_pages": 20,
+  "figure_captions": 7,
+  "tables_including_supplement": 4,
+  "bibliography_entries": 10,
+  "author_information_verified_in_pdf": true,
+  "latex_layout_and_reference_warnings": 0,
+  "visual_review": "All 20 pages rendered and inspected; figures, captions, equations and tables checked.",
+  "raw_request_hashes_verified_both_experiments": true,
+  "reported_experimental_tokens": 1229420,
+  "pdf_sha256": "912e0f8ff05ae1b00eea19a12967cfd18ea3892d7d2c273bb80fa57eb99db408",
+  "scope": "Audited research manuscript package; no claim of journal acceptance, independent human review, or plagiarism/AI-detector score."
+}

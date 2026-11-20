@@ -1,0 +1,7 @@
+{
+  "reason": "HTTP 429 request rate limit during initial concurrent execution",
+  "change": "Global minimum interval of 1.05 seconds between request starts; retry backoff 5, 12, 25 seconds",
+  "unchanged": "Frozen cases, prompt policies, models, decoding settings, planned 1152 completions and scoring rules",
+  "preservation": "Successful responses retained once per job; only missing responses resumed",
+  "scope": "Transport adjustment, not an outcome-driven experimental intervention"
+}

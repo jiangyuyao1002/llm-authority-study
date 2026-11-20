@@ -1,0 +1,16 @@
+{
+  "claim": "Identical recorded outputs are replayed through two acceptance rules; authorization and correctness remain distinct.",
+  "scope": "Experiment 1 schematic, not a new experiment or an empirical result plot.",
+  "backend": "Python / matplotlib, existing project workflow",
+  "size_mm": [
+    180,
+    123
+  ],
+  "data": "24 * 4 * 3 * 2 * 2 = 1152 retained responses; 48 per cell",
+  "exports": [
+    "PDF",
+    "SVG with editable text",
+    "PNG 350 dpi"
+  ],
+  "visual_review": "PASS: standalone bilingual exports and both compiled figure pages; full-document contact sheets checked."
+}

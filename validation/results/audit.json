@@ -1,0 +1,30 @@
+{
+  "completed_unique_trials": 1080,
+  "http_attempt_records": 1090,
+  "http_status_counts": {
+    "completed": 1080,
+    "transport_error": 10
+  },
+  "returned_models": {
+    "qwen-plus-2025-01-25": 360,
+    "deepseek-v3": 360,
+    "qwen3.5-plus-2026-02-15": 360
+  },
+  "finish_reasons": {
+    "stop": 1079,
+    "length": 1
+  },
+  "strict_schema_valid": 635,
+  "normalized_schema_valid": 1079,
+  "fence_recovered": 444,
+  "prompt_tokens": 735710,
+  "completion_tokens": 26598,
+  "first_request_utc": "2026-09-07T09:10:27.524980+00:00",
+  "last_request_utc": "2026-09-07T10:05:03.462574+00:00",
+  "request_hashes_all_verified": true,
+  "base_tasks": 24,
+  "unique_table_hashes": 24,
+  "protocol_frozen_before_first_request": true,
+  "evaluator_checks": "numeric, schema, parsing, routing and outcome-conservation checks passed",
+  "primary_estimand": "correction-condition parser interaction, per model; 10000 paired task bootstraps"
+}

@@ -1,0 +1,10 @@
+{
+  "source_files_hash_verified": 4,
+  "source_questions": 100,
+  "selected_unique_questions": 24,
+  "selected_unique_table_contexts": 24,
+  "question_table_reference_preservation": "all exact matches to source rows",
+  "source_reference_labels_edited": false,
+  "independent_human_label_review": false,
+  "scope_note": "Selection is limited to numeric labels and short contexts. Reference agreement is not an independent factual audit. Time-relative or underspecified questions remain in the frozen primary set."
+}

@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/microsoft/BIPIA",
+  "commit": "a004b69ec0dd446e0afd461d98cb5e96e120a5d0",
+  "files": {
+    "table_test.jsonl": {
+      "url": "https://raw.githubusercontent.com/microsoft/BIPIA/a004b69ec0dd446e0afd461d98cb5e96e120a5d0/benchmark/table/test.jsonl",
+      "sha256": "3d5eaab192b80bada762e3cd7655583a14e5888ba8b845a01f0434e4ccc4291e",
+      "bytes": 183302
+    },
+    "text_attack_test.json": {
+      "url": "https://raw.githubusercontent.com/microsoft/BIPIA/a004b69ec0dd446e0afd461d98cb5e96e120a5d0/benchmark/text_attack_test.json",
+      "sha256": "75750e7b4e8b34e8f9d88d89b357aeaaf02bd07f9e493ccd37eda74a0cd7c7f8",
+      "bytes": 6322
+    },
+    "benchmark_README.md": {
+      "url": "https://raw.githubusercontent.com/microsoft/BIPIA/a004b69ec0dd446e0afd461d98cb5e96e120a5d0/benchmark/README.md",
+      "sha256": "2f743580c83f4eab058d655fc6fc5f9a2ee2889d6f8396a5f088fce8286f6e4f",
+      "bytes": 2400
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/microsoft/BIPIA/a004b69ec0dd446e0afd461d98cb5e96e120a5d0/LICENSE",
+      "sha256": "57cf81c45e0929899bc18051cf90134f00e55963ddecc7b37cfc5ea1494b1e8b",
+      "bytes": 2642
+    }
+  }
+}
