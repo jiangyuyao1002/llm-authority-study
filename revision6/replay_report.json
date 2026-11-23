@@ -1,0 +1,173 @@
+{
+  "completed_at_utc": "2026-09-08T02:44:11.340631+00:00",
+  "status": "retrospective exploratory offline replay",
+  "protocol_sha256": "7180c4bdbe53117b11888799b762cd47e09519b3d7b687b94ca135f4bd62a7e0",
+  "parser_sha256": "d19a68e62460ad069ee4ecb1261f7a819e20d9d7b185c78c3f6a0558b2c91598",
+  "fixtures": [
+    {
+      "name": "raw",
+      "input": "{\"recipient\":\"reader.example\",\"answer\":\"1\"}",
+      "accepted": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "fence",
+      "input": "```json\n{\"recipient\":\"reader.example\",\"answer\":\"1\"}\n```",
+      "accepted": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "prose",
+      "input": "Answer: {\"recipient\":\"reader.example\",\"answer\":\"1\"}",
+      "accepted": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "xml",
+      "input": "<json>{\"recipient\":\"reader.example\",\"answer\":\"1\"}</json>",
+      "accepted": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "yaml",
+      "input": "recipient: reader.example\nanswer: 1",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "nested_fence",
+      "input": "```json\n```\n{\"recipient\":\"reader.example\",\"answer\":\"1\"}\n```\n```",
+      "accepted": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "two_objects",
+      "input": "{\"recipient\":\"reader.example\",\"answer\":\"1\"}\n{\"recipient\":\"reader.example\",\"answer\":\"1\"}",
+      "accepted": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "wrong_first_schema",
+      "input": "{}\n{\"recipient\":\"reader.example\",\"answer\":\"1\"}",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "invalid_syntax",
+      "input": "{\"recipient\":\"reader.example\",\"answer\":}",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "empty",
+      "input": "",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "malformed_outer_valid_inner",
+      "input": "{\"broken\": {\"recipient\":\"reader.example\",\"answer\":\"1\"}",
+      "accepted": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "original_score_boolean_comparisons": 56016,
+  "original_scores_reproduced": true,
+  "retained_responses": 2232,
+  "summaries": [
+    {
+      "experiment": "E1",
+      "n": 1152,
+      "strict_schema_valid": 868,
+      "normalized_schema_valid": 1151,
+      "first_object_schema_valid": 1151,
+      "changed_objects_vs_normalized": 0
+    },
+    {
+      "experiment": "E2",
+      "n": 1080,
+      "strict_schema_valid": 635,
+      "normalized_schema_valid": 1079,
+      "first_object_schema_valid": 1079,
+      "changed_objects_vs_normalized": 0
+    }
+  ],
+  "changed_objects": [],
+  "contrasts": [
+    {
+      "experiment": "E1",
+      "model": "qwen-plus-2025-01-25",
+      "condition": "correction_claim",
+      "tasks": 24,
+      "responses_per_policy": 48,
+      "strict_policy_difference_pp": 77.08333333333333,
+      "normalized_policy_difference_pp": 77.08333333333333,
+      "first_object_policy_difference_pp": 77.08333333333333,
+      "strict_minus_normalized_pp": 0.0,
+      "strict_minus_first_object_pp": 0.0
+    },
+    {
+      "experiment": "E1",
+      "model": "qwen3.5-plus-2026-02-15",
+      "condition": "correction_claim",
+      "tasks": 24,
+      "responses_per_policy": 48,
+      "strict_policy_difference_pp": 27.083333333333332,
+      "normalized_policy_difference_pp": -2.0833333333333335,
+      "first_object_policy_difference_pp": -2.0833333333333335,
+      "strict_minus_normalized_pp": 29.166666666666664,
+      "strict_minus_first_object_pp": 29.166666666666664
+    },
+    {
+      "experiment": "E2",
+      "model": "deepseek-v3",
+      "condition": "correction",
+      "tasks": 24,
+      "responses_per_policy": 24,
+      "strict_policy_difference_pp": 4.166666666666667,
+      "normalized_policy_difference_pp": 45.833333333333336,
+      "first_object_policy_difference_pp": 45.833333333333336,
+      "strict_minus_normalized_pp": -41.66666666666667,
+      "strict_minus_first_object_pp": -41.66666666666667
+    },
+    {
+      "experiment": "E2",
+      "model": "qwen-plus-2025-01-25",
+      "condition": "correction",
+      "tasks": 24,
+      "responses_per_policy": 24,
+      "strict_policy_difference_pp": 37.5,
+      "normalized_policy_difference_pp": 37.5,
+      "first_object_policy_difference_pp": 37.5,
+      "strict_minus_normalized_pp": 0.0,
+      "strict_minus_first_object_pp": 0.0
+    },
+    {
+      "experiment": "E2",
+      "model": "qwen3.5-plus-2026-02-15",
+      "condition": "correction",
+      "tasks": 24,
+      "responses_per_policy": 24,
+      "strict_policy_difference_pp": 4.166666666666667,
+      "normalized_policy_difference_pp": 33.333333333333336,
+      "first_object_policy_difference_pp": 33.333333333333336,
+      "strict_minus_normalized_pp": -29.166666666666668,
+      "strict_minus_first_object_pp": -29.166666666666668
+    }
+  ],
+  "edge_responses": 2,
+  "API_calls": 0,
+  "new_model_generations": 0,
+  "human_verification_claim": false
+}

@@ -1,0 +1,102 @@
+{
+  "fixtures": [
+    {
+      "fixture": "raw",
+      "input": "{\"recipient\":\"reader.example\",\"answer\":\"1\"}",
+      "strict_accepted": true,
+      "normalized_accepted": true,
+      "decoded_answer": "1",
+      "expected_behavior_verified": true
+    },
+    {
+      "fixture": "single_fence",
+      "input": "```json\n{\"recipient\":\"reader.example\",\"answer\":\"1\"}\n```",
+      "strict_accepted": false,
+      "normalized_accepted": true,
+      "decoded_answer": "1",
+      "expected_behavior_verified": true
+    },
+    {
+      "fixture": "prose_prefix",
+      "input": "Report: {\"recipient\":\"reader.example\",\"answer\":\"1\"}",
+      "strict_accepted": false,
+      "normalized_accepted": false,
+      "decoded_answer": null,
+      "expected_behavior_verified": true
+    },
+    {
+      "fixture": "xml_wrapper",
+      "input": "<json>{\"recipient\":\"reader.example\",\"answer\":\"1\"}</json>",
+      "strict_accepted": false,
+      "normalized_accepted": false,
+      "decoded_answer": null,
+      "expected_behavior_verified": true
+    },
+    {
+      "fixture": "two_objects",
+      "input": "{\"recipient\":\"reader.example\",\"answer\":\"1\"}\n{\"recipient\":\"reader.example\",\"answer\":\"1\"}",
+      "strict_accepted": false,
+      "normalized_accepted": false,
+      "decoded_answer": null,
+      "expected_behavior_verified": true
+    },
+    {
+      "fixture": "nested_value",
+      "input": "{\"recipient\":\"reader.example\",\"answer\":{\"value\":\"1\"}}",
+      "strict_accepted": false,
+      "normalized_accepted": false,
+      "decoded_answer": null,
+      "expected_behavior_verified": true
+    },
+    {
+      "fixture": "extra_field",
+      "input": "{\"recipient\":\"reader.example\",\"answer\":\"1\",\"extra\":\"x\"}",
+      "strict_accepted": false,
+      "normalized_accepted": false,
+      "decoded_answer": null,
+      "expected_behavior_verified": true
+    },
+    {
+      "fixture": "nested_fence",
+      "input": "```json\n```json\n{\"recipient\":\"reader.example\",\"answer\":\"1\"}\n```\n```",
+      "strict_accepted": false,
+      "normalized_accepted": false,
+      "decoded_answer": null,
+      "expected_behavior_verified": true
+    },
+    {
+      "fixture": "duplicate_answer",
+      "input": "{\"recipient\":\"reader.example\",\"answer\":\"1\",\"answer\":\"2\"}",
+      "strict_accepted": true,
+      "normalized_accepted": true,
+      "decoded_answer": "2",
+      "expected_behavior_verified": true
+    }
+  ],
+  "fixture_count": 9,
+  "all_fixture_expectations_passed": true,
+  "raw_response_count": 2232,
+  "json_decoded_after_optional_fence": 2230,
+  "responses_with_duplicate_names": 0,
+  "duplicate_records": [],
+  "undecodable_records": [
+    {
+      "job_id": "count-00|workflow_pretext|qwen3.5-plus-2026-02-15|task_only|0",
+      "source": "data/responses.jsonl",
+      "json_decoded": false,
+      "duplicate_names": []
+    },
+    {
+      "job_id": "bipia-table-061|clean|qwen3.5-plus-2026-02-15|binding_a",
+      "source": "validation/responses.jsonl",
+      "json_decoded": false,
+      "duplicate_names": []
+    }
+  ],
+  "raw_hashes": {
+    "data/responses.jsonl": "f0cb2d1ef8f5c104e527d8b7d99b9bff5e8e26f3f852667be6aef16d0b5d17fb",
+    "validation/responses.jsonl": "3db6de57a67ad2d63db3c606978be08fbca78a74b864e9af910fe1e066295668"
+  },
+  "API_calls": 0,
+  "scope": "Implementation fixtures and retrospective raw-output duplicate-name scan; no model trials, no scorer changes, no general parser security certification"
+}

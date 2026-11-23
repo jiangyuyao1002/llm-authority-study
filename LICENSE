@@ -12,9 +12,12 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-Files under the data-bearing directories (data/, results/, validation/, qa/,
-figures/) are additionally licensed under Creative Commons Attribution 4.0
-International (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/).
+Author-created data and figures are additionally licensed under Creative Commons
+Attribution 4.0 International (CC BY 4.0), except for third-party content.
+BIPIA/WikiTableQuestions table contexts, questions, reference answers and the
+adapted table-input cases retain Creative Commons Attribution-ShareAlike 4.0
+(CC BY-SA 4.0). General licensing of author-created outputs does not override
+this exception. See validation/ATTRIBUTION.md and the retained upstream notices.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

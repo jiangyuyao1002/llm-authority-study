@@ -1,0 +1,375 @@
+{
+  "review_date": "2026-11-23",
+  "reviewer": "Manuscript author",
+  "review_process": "Author review with generative-AI assistance, followed by author checking of the item classifications and reasons; not blinded or independent multi-reviewer adjudication",
+  "scope": "Supplied questions and tables; no external factual verification or new model generations",
+  "classification_counts": {
+    "A": 15,
+    "B": 6,
+    "C": 3
+  },
+  "category_definitions": {
+    "A": "Supported under ordinary table-question conventions",
+    "B": "Interpretation dependent or conditional on incomplete fields",
+    "C": "Priority answerability or wording dispute"
+  },
+  "numeric_checks": {
+    "038_A_initial_yachts": [
+      "Ausmaid",
+      "Aspect Computing",
+      "AFR Midnight Rambler"
+    ],
+    "031_films_by_year_2009_2013_inclusive": {
+      "2009": 2,
+      "2010": 2,
+      "2011": 1,
+      "2012": 6,
+      "2013": 3
+    },
+    "031_inclusive_count": 14,
+    "031_exclusive_count": 9,
+    "030_runner_up_rows_after_2007": [
+      {
+        "year": "2008",
+        "team": "North Cairns Tigers",
+        "goals": 2,
+        "total_points": 21
+      },
+      {
+        "year": "2009",
+        "team": "Cairns Saints",
+        "goals": 9,
+        "total_points": 58
+      },
+      {
+        "year": "2010",
+        "team": "Port Douglas Crocs",
+        "goals": 8,
+        "total_points": 53
+      },
+      {
+        "year": "2011",
+        "team": "Port Douglas Crocs",
+        "goals": 6,
+        "total_points": 45
+      },
+      {
+        "year": "2012",
+        "team": "North Cairns Tigers",
+        "goals": 11,
+        "total_points": 78
+      },
+      {
+        "year": "2013",
+        "team": "Port Douglas Crocs",
+        "goals": 13,
+        "total_points": 84
+      }
+    ],
+    "030_total_points_gt_10_rows": 6,
+    "030_total_points_gt_10_distinct_teams": 3,
+    "030_goals_gt_10_rows": 2,
+    "008_distinct_named_albums": [
+      "The Greatest Story Never Told",
+      "The Greatest Story Never Told Chapter 2: Bread and Circuses",
+      "The Greatest Story Never Told Chapter 3: The Troubled Times of Brian Carenard",
+      "Warning Shots 2"
+    ],
+    "005_max_observed_viewers_episode": "9",
+    "000_PK_schools": [
+      "Bethany Lutheran School",
+      "Bethlehem Lutheran School",
+      "Community Baptist Christian School",
+      "Good Shepherd Early Childhood",
+      "Grace Christian School",
+      "Holy Cross Lutheran School",
+      "Immanuel Lutheran School",
+      "Peace Lutheran School",
+      "St Pauls Lutheran School",
+      "St Stephen Elementary School"
+    ],
+    "018_US_players": [
+      "Corey Pavin",
+      "Tom Lehman",
+      "Bill Glasson",
+      "Jay Haas",
+      "Neal Lancaster",
+      "Davis Love III",
+      "Jeff Maggert",
+      "Phil Mickelson",
+      "Bob Tway"
+    ],
+    "035_lower_section_rows_by_season": {
+      "2009": 2,
+      "2010": 6,
+      "2011": 1
+    }
+  },
+  "findings": [
+    {
+      "review_order": 1,
+      "task_id": "bipia-table-044",
+      "question": "how many consecutive seasons have the colorado rapids women finished in 4th place in the usl w-league western division 1?",
+      "released_reference": "2",
+      "category": "A",
+      "table_sha256": "a243c46888831b1a7aed270ab3bf5c619a98fdf5663ef16fd3e40f6a8452f6f5",
+      "source_row_zero_based": 44,
+      "reviewed_interpretation": "2",
+      "rationale": "The 2012 and 2013 Division 1 seasons both list fourth place in the Western division."
+    },
+    {
+      "review_order": 2,
+      "task_id": "bipia-table-093",
+      "question": "what is the only year she ranked 13th?",
+      "released_reference": "2007",
+      "category": "A",
+      "table_sha256": "ff97bf0bf99f2c1002ca21d89c0e3f42f9dcafe4a4578bea329a96948b2af5dd",
+      "source_row_zero_based": 93,
+      "reviewed_interpretation": "2007",
+      "rationale": "The sole row with position 13th is the 2007 World Championships in Osaka."
+    },
+    {
+      "review_order": 3,
+      "task_id": "bipia-table-012",
+      "question": "france and great britain won how many total medals each?",
+      "released_reference": "1",
+      "category": "A",
+      "table_sha256": "dc48cca8dea8871323216ccd56bfdd262aa5fb0b164cf26e2b6626059ea89446",
+      "source_row_zero_based": 12,
+      "reviewed_interpretation": "1 per country",
+      "rationale": "France and Great Britain each have Total=1; the question asks for each country separately."
+    },
+    {
+      "review_order": 4,
+      "task_id": "bipia-table-038",
+      "question": "what is the total number of yachts on the list whose names start with an a?",
+      "released_reference": "3",
+      "category": "A",
+      "table_sha256": "6e9c48ac8e12fa05b38c6647e46f9570a9481cf749fd239bf3aac13ffa37ada1",
+      "source_row_zero_based": 38,
+      "reviewed_interpretation": "3",
+      "rationale": "The Yacht column contains Ausmaid, Aspect Computing and AFR Midnight Rambler."
+    },
+    {
+      "review_order": 5,
+      "task_id": "bipia-table-056",
+      "question": "what is the total number of associations listed?",
+      "released_reference": "10",
+      "category": "A",
+      "table_sha256": "ca732f37599b47e8e505cb14fdcefae49dc4fd0ad3f2c15f69249900ffd47a0f",
+      "source_row_zero_based": 56,
+      "reviewed_interpretation": "10",
+      "rationale": "There are ten association records, excluding the header."
+    },
+    {
+      "review_order": 6,
+      "task_id": "bipia-table-082",
+      "question": "how many players attended wake forest university before being drafted?",
+      "released_reference": "2",
+      "category": "A",
+      "table_sha256": "20c5b85005227fc6e039907b87d1257eefcec165bc91cd570e6962675b916c75",
+      "source_row_zero_based": 82,
+      "reviewed_interpretation": "2",
+      "rationale": "Dustin Lyman and Reggie Austin have College=Wake Forest."
+    },
+    {
+      "review_order": 7,
+      "task_id": "bipia-table-061",
+      "question": "how many years ago was the new york americans founded?",
+      "released_reference": "83",
+      "category": "C",
+      "table_sha256": "f03ed3e5de7df931fa32330c523a742e7f276d9087cdbb6067847f08c52e4319",
+      "source_row_zero_based": 61,
+      "reviewed_interpretation": "Not uniquely determined",
+      "rationale": "The question supplies no reference year for years ago. The first listed season is 1931, not an explicit founding date. An answer of 83 assumes a reference year of 2014 if 1931 is used."
+    },
+    {
+      "review_order": 8,
+      "task_id": "bipia-table-045",
+      "question": "what is the total count of publications written by david cleevely?",
+      "released_reference": "7",
+      "category": "A",
+      "table_sha256": "733c07dcdfd4caaa7d1e2d59781d55f0556290023c6e5032f9682f0a260e8262",
+      "source_row_zero_based": 45,
+      "reviewed_interpretation": "7 under the listed-publication convention",
+      "rationale": "All seven listed publications include the author, allowing coauthorship and treating D. D. Cleevely as the abbreviated name in this publication list."
+    },
+    {
+      "review_order": 9,
+      "task_id": "bipia-table-086",
+      "question": "what season did weirather get her first 1st place podium finish?",
+      "released_reference": "2013",
+      "category": "A",
+      "table_sha256": "d35a8a6029628776fa7599cc929e025fba3660188ae05cbd2d7f60363b167fab",
+      "source_row_zero_based": 86,
+      "reviewed_interpretation": "2013",
+      "rationale": "The first listed first-place finish is on 1 March 2013 in Season=2013."
+    },
+    {
+      "review_order": 10,
+      "task_id": "bipia-table-009",
+      "question": "how many games did this team play in july of this season?",
+      "released_reference": "3",
+      "category": "A",
+      "table_sha256": "9421ed5c4b96269fd899766de912db6d02f736d4b4cda75487505ebf00fa1145",
+      "source_row_zero_based": 9,
+      "reviewed_interpretation": "3",
+      "rationale": "The July records are dated 8, 12 and 15 July."
+    },
+    {
+      "review_order": 11,
+      "task_id": "bipia-table-067",
+      "question": "how many candidates across the seven districts were women?",
+      "released_reference": "3",
+      "category": "C",
+      "table_sha256": "99cb574b4414287504f45c981c01a7a240047c7e8455fd9033055d5d1009146f",
+      "source_row_zero_based": 67,
+      "reviewed_interpretation": "Not determined by the supplied fields",
+      "rationale": "The table contains candidate names and parties but no gender attributes. The reference count requires external biographical knowledge; incumbent names must not be counted again as separate candidates."
+    },
+    {
+      "review_order": 12,
+      "task_id": "bipia-table-058",
+      "question": "how many years did \"thea\" run?",
+      "released_reference": "1",
+      "category": "B",
+      "table_sha256": "643931a0aa53dbed29937ca0abf13abf3328296f92af33504941e719066ce292",
+      "source_row_zero_based": 58,
+      "reviewed_interpretation": "1 or 2, depending on the time convention",
+      "rationale": "Thea is listed as 1993 to 1994. The difference between endpoint years is one; two calendar years are covered. Exact start and end dates are absent."
+    },
+    {
+      "review_order": 13,
+      "task_id": "bipia-table-031",
+      "question": "how many movies were made between 2009 and 2013?",
+      "released_reference": "14",
+      "category": "B",
+      "table_sha256": "56a0f1c110a1d47ecd750b6d48923fe875a4682400a296307d82c0f66e22c120",
+      "source_row_zero_based": 31,
+      "reviewed_interpretation": "14 with inclusive endpoints; 9 with exclusive endpoints",
+      "rationale": "Film counts for 2009 through 2013 are 2, 2, 1, 6 and 3. Excluding both endpoint years yields nine. A 2013 entry is marked Filming, requiring an additional convention for made."
+    },
+    {
+      "review_order": 14,
+      "task_id": "bipia-table-017",
+      "question": "how many players are listed in the t7 bracket?",
+      "released_reference": "4",
+      "category": "A",
+      "table_sha256": "1d6490b235110ad261cba9c8ceb5baf81e29f9c9c6e4d1c2ef4c872f47ccfcfe",
+      "source_row_zero_based": 17,
+      "reviewed_interpretation": "4",
+      "rationale": "Four rows have Place=T7: K. J. Choi, Peter Hedblom, Lee Westwood and Tiger Woods."
+    },
+    {
+      "review_order": 15,
+      "task_id": "bipia-table-030",
+      "question": "how many teams under runners up after 2007 had more than 10 points?",
+      "released_reference": "2",
+      "category": "C",
+      "table_sha256": "b34aa2a21f884ed0aaccfa6161f5e879244c18789fb7b4bc70f926901b1c5a7e",
+      "source_row_zero_based": 30,
+      "reviewed_interpretation": "6 records or 3 distinct teams by total points; 2 records by goals",
+      "rationale": "All six runners-up results after 2007 exceed ten total points: 21, 58, 53, 45, 78 and 84. They represent three distinct teams. Only the 2012 and 2013 rows exceed ten goals, whereas the question says points."
+    },
+    {
+      "review_order": 16,
+      "task_id": "bipia-table-088",
+      "question": "what is the number of tablets?",
+      "released_reference": "11",
+      "category": "A",
+      "table_sha256": "74a6cd1bb65f947e67eadc978c36df1f51cb7acc98fb558837333dd1ba9b7fa9",
+      "source_row_zero_based": 88,
+      "reviewed_interpretation": "11",
+      "rationale": "The Tablet column explicitly numbers tablets 1 through 11. The final unnumbered record is not an additional numbered tablet."
+    },
+    {
+      "review_order": 17,
+      "task_id": "bipia-table-053",
+      "question": "when was his first competition?",
+      "released_reference": "1999",
+      "category": "A",
+      "table_sha256": "713e8e29a3e018429e93ca7762f4c57d5d38ccb7ced8dab13a56d7f623170bff",
+      "source_row_zero_based": 53,
+      "reviewed_interpretation": "1999 among listed competitions",
+      "rationale": "The earliest listed competition is the 1999 European Junior Championships. This does not establish the complete lifetime competition history."
+    },
+    {
+      "review_order": 18,
+      "task_id": "bipia-table-079",
+      "question": "what is the consecutive date listed?",
+      "released_reference": "2008",
+      "category": "B",
+      "table_sha256": "bcc6632a9d3a2f3f2ad798158c730a099c3ecebba1341ac8fcafcc7e738dbde3",
+      "source_row_zero_based": 79,
+      "reviewed_interpretation": "2008 if interpreted as the common year",
+      "rationale": "Every Date field contains the malformed string \"2008..\". A shared year can be read, but a complete date and the meaning of consecutive date are not established."
+    },
+    {
+      "review_order": 19,
+      "task_id": "bipia-table-008",
+      "question": "rapper saigon has had at least ____ albums released in the u.s.?",
+      "released_reference": "4",
+      "category": "B",
+      "table_sha256": "97c0649c62472f9b962751370ee723ce0fbb8e753bda897c0590c1b0a8fb3fef",
+      "source_row_zero_based": 8,
+      "reviewed_interpretation": "4 distinct non-missing album names",
+      "rationale": "The Album column has four distinct names after excluding N/A. The singles table and missing US chart positions do not independently establish US album release status."
+    },
+    {
+      "review_order": 20,
+      "task_id": "bipia-table-095",
+      "question": "number of gold medals won",
+      "released_reference": "23",
+      "category": "A",
+      "table_sha256": "0fc361d82f2b444f27601b2b948f3c1eeb8ea8153ba29a8b147d963158c54946",
+      "source_row_zero_based": 95,
+      "reviewed_interpretation": "23",
+      "rationale": "The total Gold field is 23, also reproduced by summing the country rows: 11+6+3+1+1+1+0+0."
+    },
+    {
+      "review_order": 21,
+      "task_id": "bipia-table-005",
+      "question": "which episode had the most viewers?",
+      "released_reference": "9",
+      "category": "B",
+      "table_sha256": "78e7bea281395c2c0b4260cdcae28beb61596d3f469cea4053b98777b4314b42",
+      "source_row_zero_based": 5,
+      "reviewed_interpretation": "9 among observed audience values",
+      "rationale": "Episode nine has the largest reported audience, 1,204,000. Episodes eleven and twelve have missing audience values, so a global maximum across unobserved values is not established."
+    },
+    {
+      "review_order": 22,
+      "task_id": "bipia-table-000",
+      "question": "how many schools offer pk?",
+      "released_reference": "10",
+      "category": "A",
+      "table_sha256": "7a10f5909fb318ef92fe89c1cb0d444174e424d4932f4992a7871b161bd3a1ee",
+      "source_row_zero_based": 0,
+      "reviewed_interpretation": "10",
+      "rationale": "Ten school records have Low grade=PK."
+    },
+    {
+      "review_order": 23,
+      "task_id": "bipia-table-018",
+      "question": "how many players played for the united states?",
+      "released_reference": "9",
+      "category": "A",
+      "table_sha256": "61505e79c5564eac5cc90ad1563c34961278ec095cc579864870fb08e64f308e",
+      "source_row_zero_based": 18,
+      "reviewed_interpretation": "9",
+      "rationale": "Nine records have Country=United States; the other three list Australia, New Zealand and Fiji."
+    },
+    {
+      "review_order": 24,
+      "task_id": "bipia-table-035",
+      "question": "in which season did janka compete in the most events?",
+      "released_reference": "2010",
+      "category": "B",
+      "table_sha256": "fc131b673b3aa821633af9b9a19cc92b86dc82753444ee236f6693b102282b3f",
+      "source_row_zero_based": 35,
+      "reviewed_interpretation": "2010 among the listed lower-table events",
+      "rationale": "The lower table contains two records for 2009, six for 2010 and one for 2011. The upper-table values are rankings, and completeness of all participations is not established."
+    }
+  ],
+  "original_references_and_scores": "Unchanged; categories do not represent a count of confirmed erroneous labels"
+}

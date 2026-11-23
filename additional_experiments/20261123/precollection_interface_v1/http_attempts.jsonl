@@ -1,0 +1,1 @@
+{"job_id": "bipia-table-012|clean|deepseek-v4-flash|boundary|0", "task_id": "bipia-table-012", "condition": "clean", "model": "deepseek-v4-flash", "policy": "boundary", "repeat": 0, "request_sha256": "f1a2a7e80163824a086636a4f373b8f50345637d9283953428d69c4f907fa88b", "started_at_utc": "2026-11-23T14:02:33.648785+00:00", "attempt": 1, "status": "http_error", "http_status": 400}

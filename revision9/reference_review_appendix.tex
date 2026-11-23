@@ -1,0 +1,44 @@
+\subsection*{Author review of public-table reference answerability}
+This review followed the original analysis. Group A supports the released reference under ordinary table-question conventions, including reading a question as referring to the listed records. Group B requires an interpretation or an assumption about incomplete fields. Group C identifies the three priority disputes used in the fixed post hoc exclusion sensitivity. These are not independently adjudicated error labels. Task numbers below are the suffixes of \texttt{bipia-table-}; the source review record preserves full task identifiers, questions, original labels and table hashes.
+
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Author review of the 24 reference answers.} Classification counts describe support and answerability, not numbers of proven incorrect labels.}
+\label{tab:reference-review}
+\begin{tabular}{llp{0.61\linewidth}}
+\toprule Group & Tasks & Task suffixes\\\midrule
+A: supported & 15 & 000, 009, 012, 017, 018, 038, 044, 045, 053, 056, 082, 086, 088, 093, 095\\
+B: conditional & 6 & 005, 008, 031, 035, 058, 079\\
+C: priority disputes & 3 & 030, 061, 067\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For task 061, the reference 83 requires an unstated comparison year even if the first listed season, 1931, is treated as the founding year; the table does not explicitly identify a founding date. Task 067 asks for the number of women candidates, but the supplied table contains names and parties without gender attributes. Task 030 asks about runners-up exceeding ten points after 2007. All six listed runners-up results in 2008--2013 exceed ten total points, representing three distinct teams; the released answer two instead matches rows exceeding ten goals. The word ``points'' and the unit of counting therefore require clarification.
+
+The six conditional cases have different limitations. Task 058 spans 1993--1994, permitting a year difference of one or a calendar-year count of two. Task 031 yields fourteen listed films when 2009 and 2013 are included, or nine when both endpoints are excluded; one 2013 entry is marked as filming. Task 079 contains the malformed date string \texttt{2008..}, supporting a common year but not a complete date. Task 008 lists four distinct non-missing album names but does not establish their US release status. Task 005 identifies episode nine as the largest observed audience while later audience values are missing. Task 035 has six listed lower-table events in 2010, compared with two in 2009 and one in 2011, without establishing completeness of all participations. None was relabelled.
+
+\subsection*{Post hoc reference-answerability sensitivity}
+The comparisons retain the original references. The full 24-task analysis remains primary. The 21-task subset excludes group C; the 15-task subset retains only group A and was added after the other results were known. Neither subset is an independently adjudicated benchmark. All cells in a comparison use the same tasks. Intervals are descriptive paired-task bootstrap intervals, not repeated-generation or simultaneous-coverage intervals.
+
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Correction-condition policy contrasts on all tasks, excluding group C, and retaining only group A.} All contrasts are binding A minus boundary in percentage points; $I=\Delta_S-\Delta_N$. Brackets show the descriptive 95\% interval for $I$. Full contrast intervals and component counts are supplied in Supplementary File S3.}
+\label{tab:reference-sensitivity}
+\begin{tabular}{lrrrrl}
+\toprule Endpoint & $n$ & $\Delta_S$ & $\Delta_N$ & $I$ & 95\% interval\\\midrule
+Qwen-Plus & 24 & 37.5 & 37.5 & 0.0 & [0.0, 0.0]\\
+Qwen3.5-Plus & 24 & 4.2 & 33.3 & $-29.2$ & [$-54.2$, 0.0]\\
+DeepSeek-V3 & 24 & 4.2 & 45.8 & $-41.7$ & [$-62.5$, $-20.8$]\\
+\midrule
+Qwen-Plus & 21 & 42.9 & 42.9 & 0.0 & [0.0, 0.0]\\
+Qwen3.5-Plus & 21 & 4.8 & 38.1 & $-33.3$ & [$-61.9$, 0.0]\\
+DeepSeek-V3 & 21 & 4.8 & 52.4 & $-47.6$ & [$-66.7$, $-28.6$]\\
+\midrule
+Qwen-Plus & 15 & 53.3 & 53.3 & 0.0 & [0.0, 0.0]\\
+Qwen3.5-Plus & 15 & $-6.7$ & 40.0 & $-46.7$ & [$-80.0$, $-6.7$]\\
+DeepSeek-V3 & 15 & 6.7 & 60.0 & $-53.3$ & [$-80.0$, $-26.7$]\\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier

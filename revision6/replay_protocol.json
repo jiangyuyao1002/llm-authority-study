@@ -1,0 +1,10 @@
+{
+  "frozen_at_utc": "2026-09-08T02:42:29.698273+00:00",
+  "status": "retrospective exploratory; previous outputs/results known; rule frozen before this new replay",
+  "rule": "Attempt unchanged whole-response schema parser. On failure, scan opening braces in character order, apply JSONDecoder.raw_decode, and choose the first successfully decoded object. Apply original schema exactly once; stop even if invalid. No syntax repair, no tool-call argument extraction, no retries or model calls. Wrapper labels are ignored by scanning, not converted. A brace in prose or a larger malformed structure can become a candidate.",
+  "comparison": "Score all 2232 retained responses with original strict, one-fence, and first-object rules. Preserve original schemas, labels and scoring. Verify strict/normalized scores against stored CSV. Report all differences including content changes and failures; do not search for a rule that induces reversal.",
+  "primary_revision_summary": "All-response acceptance and score agreement; E1 correction binding minus boundary interaction aggregated over task repetitions; E2 correction binding_a minus boundary interaction at paired task level. No new inferential intervals or reclassification of original primary analyses.",
+  "parser_sha256": "d19a68e62460ad069ee4ecb1261f7a819e20d9d7b185c78c3f6a0558b2c91598",
+  "prior_files": 223,
+  "API_calls": 0
+}

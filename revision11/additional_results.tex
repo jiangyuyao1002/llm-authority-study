@@ -1,0 +1,23 @@
+\paragraph{Observed outcomes}
+The new batch retained all 576 planned responses. Strict parsing accepted 567/576 responses, and normalization accepted 567/576. 9 responses ended at the output limit; all remained in their assigned denominators. Requested and returned model identifiers matched, all request hashes were reconstructed, and the local addendum freeze preceded every completed task request. The batch used 394,728 reported input tokens and 89,129 reported output tokens, including 79,915 reported reasoning tokens.
+
+Under correction annotations, binding A minus the completed control was $-4.2$ [$-12.5$, $1.4$] percentage points under strict parsing and $-4.2$ [$-12.5$, $1.4$] under normalization. Completing the original neutral extension changed the control contrast by $1.4$ [$-2.8$, $6.9$] points under strict parsing and $1.4$ [$-2.8$, $6.9$] under normalization (complete minus truncated). These are contemporaneous within-batch comparisons, rather than estimates obtained by subtracting results from the earlier service.
+
+The binding-A-minus-boundary strict-minus-normalized interaction was $0.0$ [$0.0$, $0.0$] points after averaging three generations per task. The three repetition-specific interactions were $0.0$, $0.0$, $0.0$ points. Table~\ref{tab:additive-counts} reports the component counts, and Table~\ref{tab:additive-contrasts} retains the full and subset contrasts. No schema-valid fenced responses were recovered in this batch. The identical strict and normalized scores therefore yielded zero interaction in every repetition, rather than reproducing the original DeepSeek-V3 fence-sensitive pattern. Binding A did not show an observed advantage over the complete control, and the complete-minus-truncated interval included zero. The additional model and interface can test the same scoring procedure, but cannot establish repeatability of the original Qwen or DeepSeek-V3 endpoint estimates.
+
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Additional DeepSeek-V4-Flash batch on the original 24 tasks.} Each row contains 72 generations: 24 tasks with three repetitions. Strict and normalized columns count jointly correct reports, not independent tasks. Fenced counts schema-valid responses recovered only by the one-fence rule. Complete and truncated are the neutral word-count controls.}
+\label{tab:additive-counts}
+\begin{tabular}{llrrr}\toprule
+Condition & Policy & Strict & Normalized & Fenced\\\midrule
+Clean & Boundary & 55 & 55 & 0\\
+Clean & Binding A & 61 & 61 & 0\\
+Clean & Complete control & 62 & 62 & 0\\
+Clean & Truncated control & 59 & 59 & 0\\
+Correction & Boundary & 58 & 58 & 0\\
+Correction & Binding A & 60 & 60 & 0\\
+Correction & Complete control & 63 & 63 & 0\\
+Correction & Truncated control & 62 & 62 & 0\\
+\bottomrule\end{tabular}
+\end{table}

@@ -1,0 +1,17 @@
+{
+  "completed": 576,
+  "planned": 576,
+  "complete": true,
+  "request_hashes_verified": true,
+  "protocol_before_all_task_requests": true,
+  "model": "deepseek-v4-flash",
+  "api_base": "https://amr-link.open-design.ai/v1",
+  "finish_reasons": {
+    "stop": 567,
+    "length": 9
+  },
+  "prompt_tokens": 394728,
+  "completion_tokens": 89129,
+  "reasoning_tokens": 79915,
+  "old_responses_pooled": false
+}

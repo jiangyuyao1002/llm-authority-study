@@ -1,0 +1,30 @@
+{
+  "plan_date": "2026-11-23",
+  "status": "Post hoc; original full-sample results and model responses were already known",
+  "ordering": "Exclusion set fixed from the author review before computing subset estimates; original full-sample results were already known",
+  "primary_results": "Keep all 24 tasks and original references as the main analysis",
+  "sensitivity_subset": "Exclude exactly category C tasks from all endpoint, condition and policy cells",
+  "excluded_task_ids": [
+    "bipia-table-061",
+    "bipia-table-067",
+    "bipia-table-030"
+  ],
+  "reasons": {
+    "bipia-table-061": "Missing temporal reference and no explicit founding-year field",
+    "bipia-table-067": "Candidate gender is not supplied in the table",
+    "bipia-table-030": "Points versus goals and row counts versus distinct-team counts"
+  },
+  "retained_tasks": 21,
+  "comparisons": "Binding A minus boundary under correction annotations, each endpoint separately; strict and normalized joint correctness and their interaction",
+  "clean_utility": "Boundary policy, normalized joint correctness for each endpoint",
+  "intervals": "10000 paired task bootstrap resamples; numpy default_rng seed 117733; descriptive 2.5th and 97.5th percentiles",
+  "limitations": "No relabelling, new generations, independent reviewers, external fact verification, or repeated-generation uncertainty; the six category B tasks remain interpretation dependent",
+  "no_additional_subset_selection": "Do not choose exclusion sets based on resulting effect sizes",
+  "additional_subset": {
+    "name": "supported_A_15",
+    "rule": "Retain exactly the 15 category A tasks in the author review",
+    "status": "Post hoc addition after the all-24 and exclude-C-21 results were known",
+    "interpretation": "Supported under table-question conventions; not independently adjudicated or guaranteed unambiguous"
+  },
+  "clean_transition_analysis": "For each endpoint and policy separately, count normalized-clean-correct tasks whose normalized correction response was incorrect; subsets differ by policy and one generation was sampled per cell."
+}

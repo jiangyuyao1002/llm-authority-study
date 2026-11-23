@@ -1,0 +1,9 @@
+{
+  "status": "http_error",
+  "http_status": 400,
+  "task_requests": 1,
+  "purpose": "Repeat of first rejected request for error diagnosis; no response or score returned.",
+  "request_sha256": "f1a2a7e80163824a086636a4f373b8f50345637d9283953428d69c4f907fa88b",
+  "error_type": "upstream_error",
+  "record_note": "Recorded from the interface diagnostic; exact request time not retained."
+}

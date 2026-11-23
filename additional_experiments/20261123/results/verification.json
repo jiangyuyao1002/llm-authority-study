@@ -1,0 +1,23 @@
+{
+  "complete_unique_jobs": 576,
+  "all_24_cells_have_24_tasks": true,
+  "three_repetitions_each": true,
+  "all_original_inputs_unchanged": true,
+  "request_reconstruction_and_returned_models_match": true,
+  "protocol_before_all_task_responses": true,
+  "contrast_point_estimates_checked": 168,
+  "tasks_not_generations_are_bootstrap_units": true,
+  "duplicate_nonempty_provider_response_ids": 0,
+  "score_functions_reproduced_original_boolean_fields_before_calls": 23760,
+  "new_model": "deepseek-v4-flash",
+  "new_provider_base": "https://amr-link.open-design.ai/v1",
+  "no_same_endpoint_replication_claim": true,
+  "new_experiment_data_sha256": {
+    "protocol.json": "64afcae28de7ec5a32fca13740192ff1815d0ab15e5861e82608ebff130e8156",
+    "jobs.jsonl": "3910b2bfeeafe8cb7576c2e7980b64eb52ed3c46d5c781ec85b73408f208138e",
+    "responses.jsonl": "d2b3e91ded16c692049201a4b6d3e08dddb1bb01b6d98165aef6aea7899eac1c",
+    "http_attempts.jsonl": "715a5b24ef4ae2ca320cd83f315fd4eb874e1bb8562c9812a3e52bd91dc0105d",
+    "results/trial_scores.csv": "14270f650a8b08cfb08b5a912740a47310b503df47ccd008a967e84605221d2f",
+    "results/paired_contrasts.json": "04db3be499477b8ff0c111b653e828e7b33d193d300f105fc739cdf07cdd0dbb"
+  }
+}

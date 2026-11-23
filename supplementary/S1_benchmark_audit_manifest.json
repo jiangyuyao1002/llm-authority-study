@@ -1,0 +1,59 @@
+[
+  {
+    "repository": "microsoft/BIPIA",
+    "commit": "a004b69ec0dd446e0afd461d98cb5e96e120a5d0",
+    "inspection_date": "2026-11-23",
+    "files": [
+      {
+        "path": "bipia/metrics/eval/match.py",
+        "url": "https://raw.githubusercontent.com/microsoft/BIPIA/a004b69ec0dd446e0afd461d98cb5e96e120a5d0/bipia/metrics/eval/match.py",
+        "sha256": "f466c397dc09ea0350633ebdc52057003e8c0fa9e7e7683a1fc308bb5e84278a",
+        "bytes": 1106
+      }
+    ]
+  },
+  {
+    "repository": "uiuc-kang-lab/InjecAgent",
+    "commit": "f19c9f2c79a41046eb13c03c51a24c567a8ffa07",
+    "inspection_date": "2026-11-23",
+    "files": [
+      {
+        "path": "src/utils.py",
+        "url": "https://raw.githubusercontent.com/uiuc-kang-lab/InjecAgent/f19c9f2c79a41046eb13c03c51a24c567a8ffa07/src/utils.py",
+        "sha256": "ab21487f92cb14840d69dded17f176ceaa60690469e8cf9b141f87d3f9795d06",
+        "bytes": 7341
+      },
+      {
+        "path": "src/evaluate_prompted_agent.py",
+        "url": "https://raw.githubusercontent.com/uiuc-kang-lab/InjecAgent/f19c9f2c79a41046eb13c03c51a24c567a8ffa07/src/evaluate_prompted_agent.py",
+        "sha256": "9a866bdec0c7da0abed9c0288b0f49404e62e77b8b2b623684d743ca87dbe4ae",
+        "bytes": 6421
+      },
+      {
+        "path": "src/output_parsing.py",
+        "url": "https://raw.githubusercontent.com/uiuc-kang-lab/InjecAgent/f19c9f2c79a41046eb13c03c51a24c567a8ffa07/src/output_parsing.py",
+        "sha256": "b841348cdbc5b87c781bed4a592d375d02d51769ac2435cf2e7e69c08a03937b",
+        "bytes": 9662
+      }
+    ]
+  },
+  {
+    "repository": "ethz-spylab/agentdojo",
+    "commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+    "inspection_date": "2026-11-23",
+    "files": [
+      {
+        "path": "src/agentdojo/benchmark.py",
+        "url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/089ed468cf3ed0322acc66b0211f26d9d90dbf60/src/agentdojo/benchmark.py",
+        "sha256": "eb74af7595194314ab54889b4ca7653f7f60b101e81167c035e384eeb2378163",
+        "bytes": 17743
+      },
+      {
+        "path": "src/agentdojo/task_suite/task_suite.py",
+        "url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/089ed468cf3ed0322acc66b0211f26d9d90dbf60/src/agentdojo/task_suite/task_suite.py",
+        "sha256": "2e69da06f7e150dd6d238c53a74845b56eebeb224e07f694e1051a6e0c6a2bc1",
+        "bytes": 19818
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+condition,policy,n,strict_joint_correct,normalized_joint_correct,fence_recovered,length_finishes,reasoning_tokens
+clean,boundary,72,55,55,0,1,9020
+clean,binding_a,72,61,61,0,0,7305
+clean,length_control_complete,72,62,62,0,1,8937
+clean,length_control_truncated,72,59,59,0,2,9315
+correction,boundary,72,58,58,0,1,12004
+correction,binding_a,72,60,60,0,2,10995
+correction,length_control_complete,72,63,63,0,1,10873
+correction,length_control_truncated,72,62,62,0,1,11466
